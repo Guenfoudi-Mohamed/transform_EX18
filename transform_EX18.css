@@ -1,0 +1,7 @@
+*{margin: 0px;padding: 0px;list-style: none;text-decoration: none;box-sizing: border-box;outline: none;}
+/* start body */                                             /*perspective-origin: 50% -40%; >> perspective-origin: 'left || center || right' , 'top || center || bottom' > -%100 ~= top & %100 ~= bottom ; */
+body{min-height: 100vh;margin: 0px auto;background-color: rgb(39, 179, 255);}
+body .container{width: 150px;height: 150px;position: fixed;top: 50%;left: 50%;transform: translate(-50%,-75%) rotateZ(-45deg);}
+body .container .shape{width:inherit;height: inherit; background-color: #deb88700;--borderWidth:20px;border: var(--borderWidth) solid transparent;border-bottom-color: rgb(0, 0, 0);border-left-color: rgb(0, 0, 0);position: absolute;}
+body .container .shape:nth-child(1){top:calc(var(--borderWidth) * -2) ;left:calc(var(--borderWidth) * 2);} 
+body .container .shape:nth-child(3){top:calc(var(--borderWidth) * 2) ;left:calc(var(--borderWidth) * -2) ;}
